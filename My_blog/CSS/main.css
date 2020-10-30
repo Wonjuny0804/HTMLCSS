@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    height: 800px;
+}
+body * {
+    box-sizing: border-box;
+    background-color: black;
+    /* padding: 0 300px; */
+}
+.users div {
+    width: auto;     
+}
+.logo {
+     height: 40px; 
+    width: 100%; 
+    background: black;
+}
+
+.logo-netflix-home {
+}
+.logo-netflix {
+    width: 10%;
+    height: auto;
+}
+.main-body{
+    padding: 0 200px;
+    align-items: center;
+}
+.head-word {
+    color: white;
+    text-align: center;
+}
+.users {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.users img {
+    width: 150px;
+}
+.user1,
+.user2,
+.user3,
+.user4,
+.user5 {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+}
+
+.user1,
+.user2,
+.user3,
+.user4,
+.user5 figcaption{
+    text-decoration: none;
+    color: white;
+}
