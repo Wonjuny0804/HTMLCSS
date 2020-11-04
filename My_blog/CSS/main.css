@@ -1,60 +1,84 @@
 body {
-    background-color: black;
-    height: 800px;
-}
-body * {
-    box-sizing: border-box;
-    background-color: black;
-    /* padding: 0 300px; */
-}
-.users div {
-    width: auto;     
-}
-.logo {
-     height: 40px; 
-    width: 100%; 
-    background: black;
+    background-color: #181818;
+    padding: 0;
+    margin: 0;
 }
 
-.logo-netflix-home {
+.netflix-header-container {
+    background-color: inherit;
 }
-.logo-netflix {
-    width: 10%;
-    height: auto;
+.netflix-head .brand {
+    margin-top: 0;
 }
-.main-body{
-    padding: 0 200px;
-    align-items: center;
+.netflix-header-container img {
+    width: 11%;
 }
-.head-word {
-    color: white;
+.netflix-main-welcome,
+.netflix-users {
+    padding: 18vh 10vw 0;
+}
+.netflix-main-welcome {
+    color: #fff;
+    font-size: 30px;
     text-align: center;
+    font-weight: 1;
 }
-.users {
+.netflix-users {
     display: flex;
-    justify-content:center;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 10px;
 }
-.users img {
-    width: 150px;
-}
-.user1,
-.user2,
-.user3,
-.user4,
-.user5 {
-    margin: 0;
-    padding: 0;
-    width: 180px;
+.netflix-users div {
+    margin: .8vw;
 }
 
-.user1,
-.user2,
-.user3,
-.user4,
-.user5 figcaption{
-    text-decoration: none;
-    color: white;
+.user1-image,
+.user2-image,
+.user3-image,
+.user4-image,
+.user5-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
 }
+.user1 a,
+.user2 a,
+.user3 a,
+.user4 a,
+.user5 a {
+    margin-top: 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5vw;
+    color: #ccc;
+
+
+}
+.user1-image {
+    background-image: url(https://occ-0-3077-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABTvWQ44joL6sYgPyPXd1r-UztV634sbdMogppJahrbdq6rKHrNyJYWqhHNP74pZvpwkJEflt6COw8NuCWZ36GqwGqAsj.png?r=125);
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+.user2-image {
+    background-image: url(https://occ-0-3077-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABflzCbqTC09OMCy-DRb9ZuJVYDmurnBUGO7ipXqSTkJU6440hmLo6YiMgLvKcsHUy23jP0shL3K0XuKXMZdH9O-Iu2Yf.png?r=86e);
+}
+.user3-image {
+    background-image: url(https://occ-0-3077-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABVrn4kREqHflBWBeNVU3eT74fmgCn-TiIy6OFc_DGmD_MuprfVs24_hJeIr6CjgZJSJFCVQi6v362SMiyriIuXijn4vm.png?r=9cc);
+}
+.user4-image {
+    background-image: url(https://occ-0-3077-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABQSezyRh9HBbj3UkKUZudkjvwyHbNYw4IXKHetsW-lDRuqmPsrYGjj9kTIJRtNh7koRtDIIT8xsZAl91WBmCo-2b5lbL.png?r=cea);
+}
+.user5-image {
+    background-image: url(https://occ-0-3077-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABfYyMKnWZtBvZzZ4LRD6-ydHe6K39eP02I8Uh6JeUYyacGy-CC0fsTxfgnE4wR55n1PZ2uRTr0RpWywxCwS-jh0-oMrc.png?r=acf);
+}
+
+
+.netflix-profile {
+    display: none;
+}
+
+
+
