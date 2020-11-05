@@ -1,5 +1,4 @@
 .app-main {
-    background-color: yellow;
 }
 .a11y-hidden {
     display: none;
@@ -8,7 +7,6 @@
 .ediya-menu {
     display: flex;
     flex-flow: row wrap;
-    background-color: lightgreen;
     text-align: center;
     padding: 0;
 }
