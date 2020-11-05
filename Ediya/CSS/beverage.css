@@ -1,0 +1,48 @@
+.app-main {
+    background-color: yellow;
+}
+.a11y-hidden {
+    display: none;
+}
+/* 어디에 display:flex를 줘야할지 잘 생각해볼것.*/
+.ediya-menu {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: lightgreen;
+    text-align: center;
+    padding: 0;
+}
+.ediya-menu__item {
+    list-style-type : none;
+    width: 360px;
+    height: 360px;
+}
+.ediya-menu__item--detail {
+    display: none;
+}
+.ediya-menu__item a {
+    text-decoration: none;
+    color: black;
+}.ediya-menu__item figure {
+    margin: 0;
+}
+.ediya-menu__item img{
+    transform: scale(.85);
+    transition: transform .4s;
+}
+.ediya-menu__item a:hover img{
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+@media all and (min-width: 767px) {
+    .app-main {
+        width: 750px;
+        margin: auto;
+    }
+    .ediya-menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}

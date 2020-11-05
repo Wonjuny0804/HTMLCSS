@@ -1,0 +1,221 @@
+/* common header*/
+/*  기본 레이아웃*/
+body {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.app-header-container,
+.app-main, 
+.app-footer-container {
+    width: 100%;
+
+}
+/* header*/
+.app-header {
+    background-color:#fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    width: 176px;
+    padding: 18px;
+    margin: 0;
+    font-size: 14px;
+}
+.brand a{
+    display: block;
+    font-size: 14px;
+}
+
+/*  공통 푸터 */
+.app-footer-container {
+    background-color: var(--theme-dark);
+    color: var(--theme-disable);
+    text-align: center;
+    display: flex;
+}
+.app-footer{
+    font-size: 1.2rem;  
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.footer-brand {
+    border-top: 1px solid #fff;
+    padding: 20px 0;
+}
+.app-footer > * {
+    width: 100%;
+}
+.address {
+    font-size: 1.1rem;
+    font-style: normal;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.address span {
+    margin: 10px 0;
+}
+.copyright {
+    font-size: 1.1rem;
+}
+.guide-list{
+    order: -1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: #878787;
+    font-size: 1.2rem;
+    line-height: 2em;
+    padding: 15px 0;
+}
+.guide-list li {
+    margin: 0 5px;
+}
+.guide-list a {
+    display: block;
+    padding: 5px 0;
+}
+
+/* 공통 위로가기 버튼 */
+.button-goToTop {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+@media all and (max-width:767px) {
+    /* mobile header*/
+    /* mobile logo */
+    
+    
+    /* hamburger menu */
+    .is-open-menu {
+        width:50px;
+        height:50px;
+        background-color: transparent;
+        padding: 18px 16px;
+        
+    }
+    .is-open-menu .ir {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url(../images/button-navigation.svg) no-repeat 50% 50%;
+    }
+    /* mobile navigation */
+    .app-navigation {
+        backdrop-filter: blur(50px);
+        transform: translateX(105vw);
+        background: hsla(225, 57%, 10%, 0.9);
+        color: #fefefe;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 66px;
+        transition: all 0.2s;
+    }
+    .app-navigation li {
+        border-bottom: 1px solid hsla(225, 57%, 30%, 0.5);
+    }
+    .app-navigation li:last-child {
+        border-bottom: 0;  
+    }
+    .app-navigation a {
+        display: block;
+        padding: 12px 22px;
+        transition: all 0.4s ease;
+    }
+    .app-navigation a:hover,
+    .app-navigation a:focus {
+        background: #2e437c;
+    }
+    .is-close-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        color: #fefefe;
+        font-size: 2rem;
+    }
+    .is--active .app-navigation {
+        transform: none;
+    }
+
+
+    /* mobile footer */
+    .guide-list{
+
+    }
+    .address,
+    .copyright {
+        padding: 0 20px;
+    }
+    .copyright {
+        font-size: 1.1rem;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .button-goToTop {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+}
+@media all and (min-width:768px) {
+    /* desktop header*/
+    .app-header-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .app-header {
+        width: 768px;
+    }
+    .is-open-menu, .is-close-menu {
+        display: none;
+    }
+    /* desktop navigation*/
+    .app-navigation ul {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .app-navigation li {
+        margin-left: 8px;
+        color: #24388D;
+
+    }
+    /*desktop footer*/
+    .app-footer-container {
+        position: relative;
+    }
+    .app-footer-container::before{
+        content:"";;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid;
+    }
+    .app-footer {
+        width: 740px;
+        margin: 0 auto;
+    }
+    .button-goToTop {
+        bottom: 50px;
+        right: 50px;
+    }
+}

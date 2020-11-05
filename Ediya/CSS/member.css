@@ -1,0 +1,57 @@
+
+.app-main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: no-repeat 50% 30% url(../images/coffee-mobile.jpg);
+    color: white;
+}
+.member-headline {
+    font-weight: 100;
+    font-size: 2em;
+}.member-text[lang="en"] {
+    font-size: 1.2em;
+}
+.member {
+    width: 100%;
+}
+.member-text {
+    margin: 5px;
+    font-size: 1.2rem;
+}
+.member-form span {
+    display: none;
+}
+fieldset {
+    padding: 15vh 0;
+}
+legend {
+    display: none;
+}
+
+.member-id,
+.member-password {
+    position:relative;
+    
+}
+.member-password {
+    margin-top: 50px;
+}
+.member-id label,
+.member-password label {
+    position: absolute;
+    bottom: 0;
+    top: 18px;
+}
+.member-id input,
+.member-password input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 50px;
+    width: 80%;
+    padding: 1.5em 0.5em 0.5em;
+}
+.member-login .button-password {
+    display: block;
+}
